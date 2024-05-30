@@ -1,0 +1,245 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color: black;
+    padding: 20px;
+    
+   
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+  }
+ 
+  .modal-content {
+    background-color: rgb(75, 74, 74);
+    border: 1.4px solid rgb(75, 74, 74);
+    border-radius: 5px;
+    margin: 15% auto; 
+    padding: 0px;
+    width: 50%; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  
+  .a-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .a-form div {
+    margin-bottom: 15px;
+  }
+  
+
+
+  .a-form label {
+    padding: 11px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #ffF;
+    
+  }
+  
+  .a-form input, .a-form textarea {
+    width: 96%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    color: black;
+    transition: border-color 0.3s;
+  }
+  
+  .a-form input:focus, .a-form textarea:focus {
+    border: 2px solid black;
+    outline: none;
+  }
+  
+  .a-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(35, 32, 32);;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .a-form button:hover {
+    background-color: #fff;
+    color: rgb(53, 53, 53);
+  }
+  
+  table {
+    width: 100%;
+    margin: 0px 0;
+  }
+  
+  table th, table td {
+    background-color: rgba(0, 0, 0, 0.4); 
+    border: none;
+    padding: 8px;
+    text-align: left;
+    
+  }
+  
+  table th {
+    background-color: rgb(35, 32, 32);
+    color: #fff;
+  }
+  
+  table img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  thead{
+    border-radius: 7px;
+  }
+  
+  h2 {
+    color: #fff;
+  }
+  
+  button#add-product {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(45, 45, 45);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  button#add-product:hover {
+    background-color: rgb(90, 89, 89);
+  }
+  
+  .formv .hv, .formv .pv, .formv .dv, .formv .iv {
+    margin-bottom: 15px;
+  }
+  
+  .formv .hv h2, .formv .pv p, .formv .dv p {
+    color: black;
+  }
+  
+  .formv .btnv button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .formv .btnv button:hover {
+    background-color: rgb(67, 64, 64);
+  }
+  
+  button.delete-product{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: 0.7s;
+  }
+  
+  button.delete-product:hover {
+    background-color: #e91e40;
+  }
+  
+  button.update-product{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: 0.7s;
+  }
+  
+  button.update-product:hover {
+    background-color: #e99f1e;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    min-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .view-product{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .view-product:hover{
+    color: black;
+    font-size: large;
+  }
+
+  @media (max-width: 768px){
+
+    body{
+        min-height: auto;
+    }
+
+    thead{
+        display: none;
+    }
+
+    td{
+        display: block;
+    }
+
+    td:first-child{
+        background-color: black;
+    }
+
+    td:nth-child(2)::before{
+        content: 'Price';
+       
+    }
+    
+    td:nth-child(3)::before{
+        content: 'Description:';
+    }
+    
+    .a-form input, .a-form textarea {
+        width: 86%;
+    }
+
+    
+  }
+
+
