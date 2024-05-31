@@ -195,7 +195,6 @@ const closeModal = () => {
   }
 };
 
-
 window.onclick = (event) => {
   const modal = document.getElementById('modal');
   if (event.target == modal) {

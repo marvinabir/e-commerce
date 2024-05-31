@@ -8,6 +8,7 @@
       "outDir": "./dist",
       "rootDir": "./src"
     },
-    "include": ["src/ecom.ts"]
+    "include": ["src/ecom.ts",
+  "src/user.ts",]
   }
   
